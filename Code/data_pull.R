@@ -7,7 +7,7 @@ library(haven)
 nsw <- 
   # import
   haven::read_dta("https://github.com/scunning1975/mixtape/raw/master/nsw_mixtape.dta") %>%
-  # drop if treet == 0
+  # drop if treat == 0
   filter(treat != 0)
 
 # merge CPS controls (Dehejia and Wahba 2002)
